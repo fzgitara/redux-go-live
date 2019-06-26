@@ -1,0 +1,5 @@
+export const GO_TO_NEXT_PAGE = 'GO_TO_NEXT_PAGE';
+export const GO_TO_PREV_PAGE = 'GO_TO_PREV_PAGE';
+export const HANDLE_NATIONALITY = 'HANDLE_NATIONALITY';
+export const HANDLE_BUSINESS = 'HANDLE_BUSINESS';
+export const HANDLE_USER = 'HANDLE_USER';
