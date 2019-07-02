@@ -3,7 +3,7 @@ import { Card, Button, Form } from 'react-bootstrap';
 import '../style.css';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { withTranslation, Translation, Trans } from 'react-i18next';
+import { withTranslation } from 'react-i18next';
 import { goToNextPage } from '../../../actions/go_live';
 
 import Nationality from '../components/nationality';
@@ -75,6 +75,7 @@ export class GoLive extends Component {
                     <h2>{t('Activate Your Account')}</h2>
                     <h4>{t('Page')} {currentScreen}</h4>
                     <p>{t('Ready to process real transactions with us? Great!')}</p>
+                    <p>{t('Prince')}</p>
                 </Card>
                 <Card className="container">
                     {screen}

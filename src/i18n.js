@@ -1,26 +1,27 @@
 import i18n from 'i18next';
 import { initReactI18next } from 'react-i18next';
+import enTranslation from './locales/en/translation.json';
+import idTranslation from './locales/id/translation.json';
+import enEx from './locales/en/ex.json';
+import idEx from './locales/id/ex.json';
+
+const enTrans = {...enTranslation, ...enEx};
+const idTrans = Object.assign(idTranslation, idEx);
 
 const resources = {
     en: {
-        translation: {
-            "Activate Your Account": "Activate Your Account",
-            "Page": "Page",
-            "Ready to process real transactions with us? Great!": "Ready to process real transactions with us? Great!"
-        }
+        translation: enTrans
     },
     id: {
-        translation: {
-            "Activate Your Account": "Aktifkan Akun Anda",
-            "Page": "Halaman",
-            "Ready to process real transactions with us? Great!": "Siap untuk bertransaksi dengan kami? Hebat!"
-        }
+        translation: idTrans
     }
 };
 
+console.log(enTrans)
+
 i18n.use(initReactI18next).init({
     resources,
-    lng: "id",
+    lng: "en",
     debug: true,
     keySeparator: false,
     interpolation: {
